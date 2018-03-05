@@ -1,0 +1,114 @@
+.navbar {
+  margin-bottom : 0px;
+}
+body {
+  background-color: "white";
+}
+input[type="text"]{
+width : 80%;
+height: 30%;
+border-radius : 5px;
+margin: 10px;
+background: white;
+}
+.show {
+  display: default
+}
+.hide {
+  display : none
+}
+form {
+  background-color: lightgrey;
+    width: 90%;
+    height: 60%;
+    padding: 10px 25px 0 50px;
+    border-radius: 10px;
+}
+input[type=submit]{
+    padding: 5px;
+    border-radius : 5px;
+    margin-right:25px;
+}
+.padding-home {
+  padding : 20px 0px 5px 15px;
+}
+.float-me-right {
+  text-align:right;
+  padding-right:15px;
+}
+.page-content {
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.alignCount {
+  padding-top : 20px;
+}
+.rowWidth {
+  width: 70px;
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 0px 25px 25px 25px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.list-group {
+  margin-bottom: 0px !important;
+}
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 85%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ul {
+  padding-left: 15px;
+  display:block;
+}
+.sortWidth {
+  width: 150px;
+}
+.hideChild {
+  display:none;
+}
+.content-page {
+  display: inline;
+  float: left;
+  width: 360px;
+  height:400px;
+  padding-top: 30px;
+}
+.toggleProduct {
+  border-top: 1px solid;
+}
+.sideBar {
+  height: auto;
+}
+.sideBar ul {
+  list-style: none;
+}
+.sideBar  ul li {
+  display: block;
+  width: 80px;
+}
+.sideBar ul li li {width: 50px;}
+.sideBar  ul li li li:before {width: 90px;}
+.sideBar  ul li li li li:before {width: 110px;}

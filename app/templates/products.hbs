@@ -1,0 +1,45 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">FashiNoble</a>
+    </div>
+</div>
+</nav>
+<div class="padding-home"> <a href="#" {{action "actionHome"}}><b>Home</b></a></div>
+<div class="row">
+  <div class="column left sideBar">
+  <ul> <b>Makeup</b>
+    {{#each-in model.productList as |key value|}}
+      {{filter-groups key=key value=value}}
+    {{/each-in}}
+  </ul>
+  <ul>
+      <input type="checkbox"
+      id="under20"
+      name="greenCheckbox"
+      checked={{greenChecked}}
+      {{action "toggleGreen" on="change"}}/>Under $20<br>
+      <input type="checkbox"
+      id="twentyToFifty"
+      name="greenCheckbox"
+      checked={{greenChecked}}
+      {{action "toggleGreen" on="change"}}/>$20-$50<br>
+      <input type="checkbox"
+      id="fiftyToHund"
+      name="greenCheckbox"
+      checked={{greenChecked}}
+      {{action "toggleGreen" on="change"}}/>$50-$100<br>
+      <input type="checkbox"
+      id="hundTotwohund"
+      name="greenCheckbox"
+      checked={{greenChecked}}
+      {{action "toggleGreen" on="change"}}/>$100-$200<br>
+      <input type="checkbox"
+      id="above300"
+      name="greenCheckbox"
+      checked={{greenChecked}}
+      {{action "toggleGreen" on="change"}}/>Above $300<br>
+  </ul>
+</div>
+<div class="column right float">{{outlet}}</div>
+</div>

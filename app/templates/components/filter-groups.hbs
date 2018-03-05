@@ -1,0 +1,8 @@
+<li {{action "onClick" value}}> {{filter-heading heading=value.name}} </li>
+{{#each value.product as |child|}}
+  <ul class = {{if hideChild 'hideChild' 'showChild'}}>
+      <li>
+      {{#link-to "products.product" child}} {{child.name}}{{/link-to}}
+    </li>
+  </ul>
+{{/each}}

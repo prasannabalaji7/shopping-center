@@ -1,0 +1,33 @@
+  <div class="container">
+  <div class="row">
+      <div class="alignCount col-sm-7">
+        <select class="sortWidth form-control pull-right" onchange={{action "onOrderChange" value="target.value"}}>
+          <option value="rating" >sort by Rating</option>
+          <option value="price">sort by Price</option>
+        </select>
+        <select class="rowWidth form-control pull-right" onchange={{action "onPageCount" value="target.value"}}>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+  <div class="col-sm-3">
+      <ul class="pagination pull-right">
+          <li  {{action "onPage" 0}}><a href="#">&laquo;</a></li>
+          {{#each pages as |page index|}}
+          <li  {{action "onPage" index}}><a href="#">{{paggination index}}</a></li>
+          {{/each}}
+          <li {{action "onPage" pages.length}}><a href="#">&raquo;</a></li>
+      </ul>
+  </div>
+</div>
+</div>
+  {{#each sortedReviews as |items|}}
+    <div class="content-page">
+    <img src="/assets/images/{{items.imagSrc}}.jpg">
+    <div>{{items.name}}</div>
+    <div>${{items.price}}</div>
+    {{star-rating items.rating}}
+    </div>
+  {{/each}}
+{{yield}}
