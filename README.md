@@ -1,7 +1,12 @@
 # shopping-center
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+* A basic Ember application with static data using the below 
+* Ember2.0 ,Handlebars , bootstrap
+* http://localhost:port/ will load the home pages
+* You can traverse through the products in the side menu
+* With some Paging, sortBy ,routing functionality
+* As its a static page the first two menu in "Cheeks" menu will have the data
+* will improve the application with dynamic data soon    
 
 ## Prerequisites
 
